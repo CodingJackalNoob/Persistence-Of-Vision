@@ -11,5 +11,5 @@ GPIO.setup (LPWM, GPIO.OUT)
 pwm = GPIO.PWM(RPWM, 20000)
 pwm.start(0)
 
-def setSpeed (percent)
+def setSpeed (percent):
   pwm.ChangeDutyCycle(percent)
